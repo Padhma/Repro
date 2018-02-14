@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-color: #bbdefb;
+}
+button {
+    background-color: #1a237e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+table {
+    border-collapse: collapse;
+    width: 65%;
+	position: absolute;
+	top: 25%;
+	left: 20%;
+	margin-right: -25%;
+    
+}
+th, td {
+    text-align: left;
+    padding: 15px;
+}
+tr:nth-child(odd){background-color: #ffffff;}
+tr:nth-child(even){background-color: #f2f2f2;}
+th {
+    background-color: #01579b;
+    color: white;
+	font-size: 20px;
+}
+</style>
+</head>
+<body>
+<?php
+
+$name = $_POST['name'];
+$roll = $_POST['rollid'];
+$email = $_POST['replyto'];
+$nocopy = $_POST['copies'];
+$binding = $_POST['binding'];
+
+?>
+<center>
+<table>
+  <tr>
+    <th>User Credentials</th>
+    <th>Information</th>
+ </tr>
+  <tr>
+    <td>Name</td>
+    <td>Padhma</td>
+  </tr>
+  <tr>
+    <td>Roll No/Staff ID</td>
+    <td>152IT164</td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>padhma.it15@bitsathy.ac.in</td>
+  </tr>
+  <tr>
+    <td>Number of Copies</td>
+    <td>1</td>
+</tr>
+   <tr>
+    <td>Binding and Page Printing Description</td>
+    <td>No binding and single side printing</td>
+</tr>
+   </tr>
+   <tr>
+    <td>Shared Google Drive link</td>
+    <td><a href="https://drive.google.com/open?id=106gEJVCkAKPWaXls1CBkUpEliRvywPR36AUfTWbg800" target="_blank">https://drive.google.com/open?id=106gEJVCkAKPWaXls1CBkUpEliRvywPR36AUfTWbg800</a></td>
+</tr>
+</tr>
+   <tr>
+    <td><button>Failed</button></td>
+    <td><button class="btn" onclick = "">Completed</button></td>
+</tr>
+
+</table>
+</center>
+</body>
+</html>
